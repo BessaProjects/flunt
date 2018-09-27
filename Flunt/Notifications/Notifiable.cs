@@ -47,7 +47,7 @@ namespace Flunt.Notifications
                 AddNotifications(item);
         }
 
-        public bool Invalid => _notifications.Any();
-        public bool Valid => !Invalid;
+        public virtual bool Invalid => _notifications.Any();
+        public virtual bool Valid => !Invalid;
     }
 }
